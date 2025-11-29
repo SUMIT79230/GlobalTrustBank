@@ -1,0 +1,73 @@
+.main-home {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #e3f2fd, #ffffff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Outer box for one-card slider */
+.slider-container {
+  position: relative;
+  width: 620px;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* Card wrapper */
+.slider-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  text-align: center;
+  width: 100%;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+/* IMAGE – same height for all */
+.slider-img {
+  width: 100%;
+  height: 350px;         
+  object-fit: cover;    
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.slider-card h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-top: 10px;
+  color: #111827;
+  font-weight: 700;
+}
+
+/* Buttons */
+.slider-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn.left {
+  left: 2px;
+}
+
+.slider-btn.right {
+  right: 2px;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.85);
+}
